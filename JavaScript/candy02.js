@@ -9,3 +9,16 @@
 
 // # 提示：
 // https://ubin.io/9vJf2w
+
+const abclist = ["O", "Q", "R", "S"];
+for (let i = 0; i < abclist.length - 1; i++) {
+  if (
+    // i + 1 < abclist.length &&
+    abclist[i + 1].charCodeAt(abclist[i + 1]) -
+      abclist[i].charCodeAt(abclist[i]) >
+    1
+  ) {
+    let result = abclist[i].charCodeAt(abclist[i]) + 1;
+    console.log(String.fromCharCode(result));
+  }
+}
